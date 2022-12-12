@@ -14,7 +14,7 @@ let gameTimeCount = 15;
 let gameStarted = false;
 let prevMolePosition = 0;
 let gridSize = squares.length;
-const showMole = `<img src="/Assets/mole.png" id="mole-img">`;
+const showMole = `<img src="Assets/mole.png" id="mole-img">`;
 
 
 //set Mode 
