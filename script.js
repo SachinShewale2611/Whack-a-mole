@@ -24,13 +24,13 @@ const changeMode = () => {
           speed = 1000;
           break;
      case'2':
-          speed = 900;
+          speed = 850;
           break;
      case'3':
-          speed = 700;
+          speed = 600;
           break;
      case'4':
-          speed = 500; 
+          speed = 450; 
      }
 }
 
