@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/SachinShewale2611/Whack-a-mole](https://github.com/SachinShewale2611/Whack-a-mole)
-- Live Site URL: [https://sachinshewale2611.github.io/Whack-a-mole/](https://sachinshewale2611.github.io/Whack-a-mole/)
+- Live Site URL: [https://sachin-whack-a-mole.netlify.app/](https://sachin-whack-a-mole.netlify.app/)
 
 ## My process
 
