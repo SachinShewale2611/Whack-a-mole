@@ -4,6 +4,7 @@ const squares = document.querySelectorAll('.square');
 const start = document.getElementById('start');
 const reset = document.getElementById('reset');
 const grid = document.getElementById('grid');
+const audio = document.getElementById('audio');
 
 let clicked;
 let gameTimer;
@@ -17,7 +18,7 @@ let gridSize = squares.length;
 const showMole = `<img src="/Assets/mole.png" id="mole-img">`;
 
 
-//set Mode 
+//change Difficulty  
 const changeMode = () => {
      switch(select.value){
      case'1':
@@ -87,6 +88,8 @@ const checkGameTimer = () => {
 //count score
 const countScore = () => {
      if(gameStarted){
+          audio.currentTime = 0;
+          audio.play();
           scoreCounter++;
           let mole = document.querySelector('.mole');
           mole.innerHTML = '';
