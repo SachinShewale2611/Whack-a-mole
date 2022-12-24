@@ -73,7 +73,7 @@ option {
     height:  40px;
 }
 .hover-hammer {
-    cursor: url("Assets/Thor\'s\ Hammer.cur"), pointer;
+    cursor: url("Assets/Thor\'s\ Hammer.cur"), auto;
   }
 
 select{

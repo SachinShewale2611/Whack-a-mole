@@ -15,7 +15,7 @@ let gameTimeCount = 15;
 let gameStarted = false;
 let prevMolePosition = 0;
 let gridSize = squares.length;
-const showMole = `<img src="/Assets/mole.png" id="mole-img">`;
+const showMole = `<img src="Assets/mole.png" id="mole-img">`;
 
 
 //change Difficulty  
@@ -25,13 +25,13 @@ const changeMode = () => {
           speed = 1000;
           break;
      case'2':
-          speed = 900;
+          speed = 850;
           break;
      case'3':
-          speed = 700;
+          speed = 600;
           break;
      case'4':
-          speed = 500; 
+          speed = 450; 
      }
 }
 
