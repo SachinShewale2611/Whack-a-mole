@@ -125,6 +125,4 @@ grid.addEventListener('click', (e) => {
      }
 })
 reset.addEventListener('click', resetGame);
-
-
 select.addEventListener('change',changeMode);
