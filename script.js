@@ -1,10 +1,11 @@
-const score = document.getElementById('score');
-const timeLeft = document.getElementById('time-left');
 const squares = document.querySelectorAll('.square');
+const timeLeft = document.getElementById('time-left');
+const select = document.getElementById('select');
+const score = document.getElementById('score');
 const start = document.getElementById('start');
 const reset = document.getElementById('reset');
-const grid = document.getElementById('grid');
 const audio = document.getElementById('audio');
+const grid = document.getElementById('grid');
 
 let clicked;
 let gameTimer;
@@ -60,6 +61,7 @@ const randomizeMole = () => {
 const startGame = () => {
      if (!gameStarted) {
           resetGame();
+          start.classList.add("disabled");
           gameStarted = true;
           scoreCounter = 0;
           moleInterval = setInterval(() => {
@@ -76,6 +78,7 @@ const startGame = () => {
 //check timeout of the game
 const checkGameTimer = () => {
      if (gameTimeCount === 0) {
+          start.classList.remove("disabled");
           clearInterval(gameTimer);
           clearInterval(moleInterval);
           gameStarted = false;
@@ -99,6 +102,7 @@ const countScore = () => {
 
 //Reset the game
 const resetGame = () => {
+     start.classList.remove("disabled");
      clearInterval(moleInterval);
      clearInterval(gameTimer);
      scoreCounter = 0;
@@ -107,6 +111,9 @@ const resetGame = () => {
      score.innerHTML = scoreCounter;
      gameStarted = false;
      squares[parseInt(gridSize/2)].innerHTML = "";
+     squares.forEach((square) => {
+          square.innerHTML = '';
+     });
 }
 
 //start the game when start button is clicked;
@@ -119,6 +126,5 @@ grid.addEventListener('click', (e) => {
 })
 reset.addEventListener('click', resetGame);
 
-const select = document.getElementById('select');
 
 select.addEventListener('change',changeMode);
